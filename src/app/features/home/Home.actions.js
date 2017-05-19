@@ -1,5 +1,12 @@
 import fetch from 'isomorphic-fetch'
 
+export const updateText = (text) => {
+    return {
+        type: `UPDATE_TEXT`,
+        text
+    }
+}
+
 function receivedItem(json) {
     return {
         type: 'RECEIVED_ITEM',

@@ -1,15 +1,15 @@
 import thunkMiddleware from 'redux-thunk'
-import { createStore, applyMiddleware, compose  } from 'redux'
+import { createStore, applyMiddleware  } from 'redux'
+import { composeWithDevTools } from 'redux-devtools-extension'
 import appReducer from './reducers.js'
 
 export default function configureStore(initialState) {
   return createStore(
     appReducer,
-    compose(
+    composeWithDevTools(
       applyMiddleware(
         thunkMiddleware // lets us dispatch() functions
-      ),
-      window.devToolsExtension ? window.devToolsExtension() : f => f
       )
     )
+  )
 }
