@@ -1,0 +1,3 @@
+.main {
+ composes: container from '../../global/styles/layout.css'; 
+}

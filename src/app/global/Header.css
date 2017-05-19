@@ -1,0 +1,11 @@
+.bar {
+  background: blue;
+  text-align: center;
+  padding: 1em;
+}
+
+.title {
+  font-size: 2em;
+  color: white;
+  text-decoration: none;
+}

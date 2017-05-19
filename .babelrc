@@ -1,0 +1,10 @@
+{
+  "presets": ["react", "es2015", "stage-1"],
+  "plugins": [
+    "transform-es2015-arrow-functions",
+    "import-glob",
+    ["babel-plugin-module-alias", [
+      { "src": "./src/app", "expose": "app" }
+    ]]
+  ]
+}
